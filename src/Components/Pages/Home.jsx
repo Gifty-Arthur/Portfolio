@@ -1,9 +1,13 @@
 import React from "react";
 import image from "../../assets/Images/port.jpg";
 
+//icons
+import { FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+
 const Home = () => {
   return (
-    <div className="bg-tertiary w-full flex flex-col items-center justify-center  min-h-screen bg-center">
+    <div className="bg-tertiary w-full flex flex-col items-center justify-center  h-[686px] bg-center">
       <div className="container">
         <div className="flex flex-wrap gap-x-40 mt-4 ml-28">
           <div className="flex flex-col items-start justify-center mt-40 ">
@@ -28,11 +32,18 @@ const Home = () => {
               Hire Me
             </button>
           </div>
-          <img
-            className="w-[538px] h-[417px] rounded-lg mt-10"
-            src={image}
-            alt=""
-          />
+          <div className="flex-col">
+            <img
+              className="w-[538px] h-[417px] rounded-lg mt-10"
+              src={image}
+              alt=""
+            />
+            <div className="flex flex-wrap gap-10 justify-center mt-10">
+              <FaInstagram className="text-white w-[32px] h-[32px]" />
+              <FaLinkedin className="text-white w-[32px] h-[32px]" />
+              <FaTwitter className="text-white w-[32px] h-[32px]" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
