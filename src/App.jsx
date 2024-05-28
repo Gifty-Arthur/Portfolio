@@ -1,4 +1,5 @@
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import About from "./Components/Pages/About";
 import Contact from "./Components/Pages/Contact";
 import Footer from "./Components/Pages/Footer";
