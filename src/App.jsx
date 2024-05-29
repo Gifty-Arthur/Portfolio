@@ -12,8 +12,14 @@ function App() {
   return (
     <>
       <Navbar />
+      <Home />
+      <About />
+      <Services />
+      <Project />
+      <Contact />
+      <Footer />
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="about/" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/project" element={<Project />} />

@@ -19,8 +19,8 @@ function Navbar() {
         <Link to="/">
           <li>Home</li>
         </Link>
-        <Link to="/about">
-          <li>Features</li>
+        <Link to="/">
+          <li>About Me</li>
         </Link>
         <Link to="/services">
           <li>Services</li>
@@ -55,7 +55,7 @@ function Navbar() {
           nav
             ? "text-white opacity-100 transform translate-x-0"
             : "opacity-0 transform -translate-y-full"
-        } transition-transform absolute top-0 left-0 w-full h-screen bg-zinc-800/80  flex flex-col justify-center items-center text-2xl`}
+        } transition-transform absolute top-0 left-0 w-full h-screen bg-zinc-800/80  flex flex-col justify-center items-center text-2xl `}
         onClick={() => setNav(false)}
       >
         <Link to="/">
@@ -77,7 +77,7 @@ function Navbar() {
         <a
           href={CV1}
           download="CV1"
-          className=" text-white bg-primary w-[188px] h-[52px] rounded-md hover:bg-white hover:text-black flex items-center justify-center mt-4 text- "
+          className=" text-white bg-primary w-[188px] h-[52px] rounded-md hover:bg-white hover:text-black flex items-center justify-center mt-4 md: text-[15px]"
         >
           Download CV {/* Add any additional button styling here */}
         </a>
