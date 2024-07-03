@@ -7,12 +7,34 @@ export default {
   theme: {
     extend: {
       colors:{
-          primary: "#00DDB3",
-          tertiary: "#1E1E1E"
+        primary:'',
+        custom1: "#1E1E1E"
       },
       fontFamily:{
-        poppins : ['Poppins', 'sans-serif']
-      }
+        poppins: ['Poppins', 'sans-serif'],
+      },
+
+      keyframes:{
+        blink:{
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: 0 },
+        },
+      },
+      animation: {
+        blink: 'blink 2s infinite',
+      },
+    },
+    container: {
+    padding: {
+      DEFAULT: '1rem',
+      sm: '2rem',
+      lg: '4rem',
+      xl: '5rem',
+      '2xl': '6rem',
+      
+    },
+    center: true,
+
     },
   },
   plugins: [],
