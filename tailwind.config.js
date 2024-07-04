@@ -10,6 +10,7 @@ export default {
         primary:'#FD6F00',
         secondary: '#73A4CF',
         custom1: "#1E1E1E",
+        custom2: "#212121"
         
 
       },
